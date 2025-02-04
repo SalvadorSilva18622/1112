@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Inspirado na Steam</title>
+    <!-- Ligação ao ficheiro CSS externo -->
+    <link rel="stylesheet" href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Steamer, User</h1>
+        <!-- Menu de navegação -->
+        <nav>
+            <ul>
+                <li><a href="#inicio" target="_self">Início</a></li>
+                <li><a href="games2.html" target="_self">Jogos</a></li>
+                <li><a href="login.html" target="_self">Login</a></li>
+                <li><a href="signin.html" target="_self">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal da página -->
+    <main>
+        <!-- Seção inicial com uma mensagem de boas-vindas -->
+        <section id="inicio">
+            <h2>Início</h2>
+            <p>Bem-vindo à Steamer, User. Aqui você encontra os melhores jogos e promoções.</p>
+            <!-- Imagem de destaque na página inicial -->
+            <img src="imagem.png" alt="Imagem de Jogos">
+        </section>
+
+        <!-- Seção de promoções de jogos -->
+        <section id="jogos">
+            <h2>Promoções em Alta!</h2>
+            <!-- Tabela listando alguns jogos em promoção -->
+            <table>
+                <tr>
+                    <th>Jogo</th>
+                    <th>Plataforma</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Shadow of the Colossus</td>
+                    <td>PC</td>
+                    <td>19.99€</td>
+                </tr>
+                <tr>
+                    <td>Bus Simulator</td>
+                    <td>PC</td>
+                    <td>9.99€</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Seção de quiz -->
+        <section id="quiz">
+            <h2>Quiz</h2>
+            <form id="quizForm">
+                <p>Qual seu gênero de jogo favorito?</p>
+                <!-- Botões de rádio para selecionar o gênero de jogo favorito -->
+                <input type="radio" id="acao" name="genero" value="acao" required>
+                <label for="acao">Ação</label><br>
+                <input type="radio" id="aventura" name="genero" value="aventura" required>
+                <label for="aventura">Aventura</label><br>
+                <!-- Caixas de seleção para selecionar os tipos de jogo -->
+                <input type="checkbox" id="rpg" name="tipo" value="rpg">
+                <label for="rpg">RPG</label><br>
+                <input type="checkbox" id="estrategia" name="tipo" value="estrategia">
+                <label for="estrategia">Estratégia</label><br>
+                <!-- Caixa de texto para o feedback -->
+                <label for="feedback">Dê seu feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br>
+                <!-- Botão de envio do formulário -->
+                <input type="submit" value="Enviar Respostas">
+            </form>
+            <!-- Div para mostrar o resultado do quiz -->
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 Steamer Inspirado na Steam. Todos os direitos reservados.</p>
+        <!-- Div para mostrar a data corrente -->
+        <div id="dataCorrente"></div>
+    </footer>
+
+    <!-- Ligação ao ficheiro JavaScript externo -->
+    <script src="javascript.js"></script>
+</body>
+</html>
